@@ -57,7 +57,7 @@ id="personaladdress" size="30"></td>
 <option value="Goa">GOA</option>
 <option value="Patna">PATNA</option>
 <option value="Banagalore">BANGALORE</option>
-<option value="Managalore">MANGALORE</option>
+<option value="Kerala">KERALA</option>
 </select></td>
 </tr>
 
