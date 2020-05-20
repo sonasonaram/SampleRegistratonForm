@@ -66,6 +66,7 @@ id="personaladdress" size="30"></td>
 <td><select name="Course">
 <option value="-1" selected>select..</option>
 <option value="B.Tech">B.TECH</option>
+<option value="BSC">BSC</option>
 <option value="MCA">MCA</option>
 <option value="MBA">MBA</option>
 <option value="BCA">BCA</option>
