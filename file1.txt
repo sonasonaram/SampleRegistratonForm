@@ -1,1 +1,2 @@
- am the first file
+I am the first file
+This is the second line in file1
