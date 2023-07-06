@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/issuer: eab-issuer
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/acme-challenge-type: http01
+  name: nginx
+  namespace: cert-manager
+spec:
+  rules:
+  - host: pki.atlasqa.co.uk
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: apache2
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - pki.atlasqa.co.uk
+    secretName: hvca-cert-secret

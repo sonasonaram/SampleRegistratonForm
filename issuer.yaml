@@ -1,0 +1,21 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: eab-issuer
+  namespace: cert-manager
+spec:
+  acme:
+    email: user@example.com
+    server: https://emea.acme.atlas.globalsign.com/directory
+    externalAccountBinding:
+      keyID: keyID
+      keySecretRef:
+        name: eab-secret
+        key: secret
+      keyAlgorithm: HS256
+    privateKeySecretRef:
+      name: acme-account-secret-issuer
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
