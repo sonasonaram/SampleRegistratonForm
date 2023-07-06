@@ -15,5 +15,6 @@ spec:
       containers:
         - name: my-container
           image: myteqhub/testrepo:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
