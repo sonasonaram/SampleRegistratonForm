@@ -16,7 +16,7 @@ spec:
         path: /
         backend:
           service:
-            name: apache2
+            name: my-service
             port:
               number: 80
   tls:
