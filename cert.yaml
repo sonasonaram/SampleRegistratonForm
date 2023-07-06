@@ -5,8 +5,8 @@ metadata:
   namespace: cert-manager
 spec:
   secretName: acme-account-secret
-  duration: 2160h
-  renewBefore: 360h
+  duration: 24h
+  renewBefore: 2h
   commonName: pki.atlasqa.co.uk
   dnsNames:
   - pki.atlasqa.co.uk
