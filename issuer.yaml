@@ -8,7 +8,7 @@ spec:
     email: user@example.com
     server: https://emea.acme.atlas.globalsign.com/directory
     externalAccountBinding:
-      keyID: 9dea7254ff658882
+      keyID: "{{KEY_ID}}"
       keySecretRef:
         name: eab-secret
         key: secret
